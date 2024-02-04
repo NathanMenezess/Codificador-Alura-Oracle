@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="celular.css">
+    <link rel="stylesheet" href="tablet.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo.png" alt="logo da Alura">
+
+    </header>
+
+
+    <div class="area-codificacao">
+        <textarea placeholder="Digite seu texto" name="inputTexto" id="inputTexto" cols="30" rows="10" oninput="validarTexto(this)"></textarea>
+
+        <p id="aviso"><img src="img/aviso.png"> Apenas letras minúsculas e sem acento.</p>
+        <div class="area-button">
+            
+            <button onclick="executarDuasFuncoes()" id="criptografar">Criptografar</button>
+            <button onclick="executarDuasFuncoesInvertidas()" id="descriptografarTeste">Descriptografar</button>
+        </div>
+
+    </div>
+
+    <div id="area-resultado">
+        <div id="div-resultado">
+            <img class="img" src="img/High quality products 1 1.png" alt="imagem de um menino com uma lupa">
+            <p class="p_1">Nenhuma mensagem encontrada</p>
+            <p class="p_2">Digite um texto que você deseja criptografar ou descriptografa</p>
+        </div>
+    </div>
+
+
+
+    <script src="app.js" defer></script>
+    <script src="descriptografar.js" defer></script>
+
+</body>
+
+</html>
